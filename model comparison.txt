@@ -3,19 +3,24 @@ FOR migraine_symptom_classification.csv (Normal):
     KNN: 83.75
     NB: 96.25
     DT: 85
-FOR migraine_balanced.csv (Smote):
+    XG: 90
+    SVM: 95
+FOR migraine_balanced.csv (Smote): (IN USE)
     RF: 96.2428
     KNN: 92.4855
     NB: 71.6763
     DT: 73.9884
+    XG: 96.5318
+    SVM: 90
 FOR migraine_balanced_cleaned2.csv (Smote + shrinking):
     RF: 90
     KNN: 84.2857
     NB: 74.2857
     DT: 74.2857
+    XG: 90
+    SVM: 86.4286
 Next step:
-    1-XGBOOST
     2-parameter tuning for all models then re-comparing. <==important
-    3-try lightgbm & catboost models?
-    4-compute: Precision -recall - F1 score - AUC.  
+    4-compute: Precision -recall - F1 score(DONEEEEE)
+NOTE: catboost only works for python 11 and I'm on python 14. Not using it. (lightbgm is similar)
 
